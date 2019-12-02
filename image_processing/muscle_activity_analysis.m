@@ -130,6 +130,12 @@ tic; close all;
     extract_centerline_vd(...
     imagelist_use, 6, 4, 2.5);
 toc;
+%close_para: determines redius of disk used to merge image fragments
+%fill_para: another method used to connect fragments (erosion followed by dilation
+%using same radius of fill_para
+%thresh: scales the threshold used for close_para and fill_para
+%default: 6,4,2.5
+
 
 % Calculate dorsal and ventral muscle activities, save output
 
